@@ -29,6 +29,7 @@
 \LoadClass[a4paper,twoside,11pt]{article}
 
 %%% Required packages
+\RequirePackage{scrlfile}
 \RequirePackage{pslatex}
 \RequirePackage{ifthen}
 \RequirePackage{parskip}
@@ -79,12 +80,10 @@
 \newcommand{\docdescription}[1]{\gdef\project@description{#1}}
 
 %%% Define 
-\AtEndDocument{\clearpage
+\BeforeClosingMainAux{%
   \addtocounter{page}{-1}%
-  \immediate\write\@auxout{%
-    \string\newlabel{project@lastpage}%
-    {{}{\thepage}}}%
-  \addtocounter{page}{1}%
+  \label{project@lastpage}
+  \stepcounter{page}
 }
 
 %%% Custom page style - plain
