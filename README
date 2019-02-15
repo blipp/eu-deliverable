@@ -1,0 +1,25 @@
+
+EU deliverable documentclass for LaTeX
+=========================================
+
+Version 2.0 (2016-02-15)
+------------------------
+
+Usage
+-----
+
+The eu-deliverable class provides the basic structure of an EU deliverable.
+For use in a particular project, you will need to redefine a number of fields;
+see the sample james-deliverable class for details.
+
+See file "sample.tex" for additional notes on usage.
+
+To use the documentclass for a new deliverable, copy the files in this
+directory (including the "images" subdirectory) and use "sample.tex" as a
+template for a new document.
+
+Address any bug reports or questions to Mary Ellen Foster (http://maryellenfoster.uk/).
+
+This work is licensed under the Creative Commons Attribution-ShareAlike 4.0
+International License. To view a copy of this license, visit
+http://creativecommons.org/licenses/by-sa/4.0/.
